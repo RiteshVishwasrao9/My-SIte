@@ -99,7 +99,6 @@ a {
 /* Projects Section */
 .projects {
     padding: 80px 10%;
-    /* background-color: #f9f9f9; */
     background: url('assets/Hero.jpg') center center/cover no-repeat;
     text-align: center;
 }
@@ -170,4 +169,115 @@ footer .linkedin-icon {
 
 footer .linkedin-icon:hover {
     transform: scale(1.1);
+}
+
+/* Media Queries for Responsiveness */
+@media only screen and (max-width: 1200px) {
+    .about-skills .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-skills .about, .about-skills .skills {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .projects {
+        padding: 60px 5%;
+    }
+
+    .project-card {
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .hero .btn {
+        padding: 10px 25px;
+        font-size: 1.1rem;
+    }
+
+    .about-skills {
+        padding: 40px 5%;
+    }
+
+    .about-skills h2 {
+        font-size: 2rem;
+    }
+
+    .about-skills .skill-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .projects h2 {
+        font-size: 2rem;
+    }
+
+    .project-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    footer .linkedin-icon {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .hero .btn {
+        padding: 8px 20px;
+        font-size: 1rem;
+    }
+
+    .about-skills {
+        padding: 30px 5%;
+    }
+
+    .about-skills h2 {
+        font-size: 1.8rem;
+    }
+
+    .about-skills .skill-list {
+        grid-template-columns: 1fr;
+    }
+
+    .projects {
+        padding: 40px 5%;
+    }
+
+    .project-card h3 {
+        font-size: 1.5rem;
+    }
+
+    .project-card p {
+        font-size: 1rem;
+    }
+
+    .project-card .btn-github {
+        font-size: 1.1rem;
+        padding: 8px 18px;
+    }
+
+    footer .linkedin-icon {
+        width: 20px;
+        height: 20px;
+    }
 }
